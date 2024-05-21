@@ -54,38 +54,42 @@
         </div>
       </div>
     </header>
-    <main class="bg-gray-200 flex flex-col justify-center items-center">
+    <main class="bg-gray-200">
       <div
-        id="filters"
-        class="flex justify-items-start gap-16 filters mt-5 mb-10"
+        id="recipes_section"
+        class="flex flex-col justify-center items-center"
       >
-        <!-- les filtres seront affichés ici -->
-        <div class="relative inline-block text-left">
-          <div>
-            <button
-              type="button"
-              class="inline-flex w-full justify-center gap-x-8 rounded-md bg-white px-3 py-3 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-              id="menu-button"
-              aria-expanded="true"
-              aria-haspopup="true"
-            >
-              Ingrédients
-              <svg
-                class="-mr-1 h-5 w-5 text-gray-400"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
+        <div
+          id="filters"
+          class="flex justify-items-start gap-16 filters mt-5 mb-10"
+        >
+          <!-- les filtres seront affichés ici -->
+          <div class="relative inline-block text-left">
+            <div>
+              <button
+                type="button"
+                class="inline-flex w-full justify-center gap-x-8 rounded-md bg-white px-3 py-3 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                id="menu-button"
+                aria-expanded="true"
+                aria-haspopup="true"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </button>
-          </div>
+                Ingrédients
+                <svg
+                  class="-mr-1 h-5 w-5 text-gray-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
 
-          <!--
+            <!--
             Dropdown menu, show/hide based on menu state.
         
             Entering: "transition ease-out duration-100"
@@ -94,34 +98,33 @@
             Leaving: "transition ease-in duration-75"
               From: "transform opacity-100 scale-100"
               To: "transform opacity-0 scale-95"
-          -->
-        </div>
-        <div class="relative inline-block text-left">
-          <div>
-            <button
-              type="button"
-              class="inline-flex w-full justify-center gap-x-8 rounded-md bg-white px-3 py-3 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-              id="menu-button"
-              aria-expanded="true"
-              aria-haspopup="true"
-            >
-              Appareils
-              <svg
-                class="-mr-1 h-5 w-5 text-gray-400"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
+          --></div>
+          <div class="relative inline-block text-left">
+            <div>
+              <button
+                type="button"
+                class="inline-flex w-full justify-center gap-x-8 rounded-md bg-white px-3 py-3 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                id="menu-button"
+                aria-expanded="true"
+                aria-haspopup="true"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </button>
-          </div>
+                Appareils
+                <svg
+                  class="-mr-1 h-5 w-5 text-gray-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
 
-          <!--
+            <!--
             Dropdown menu, show/hide based on menu state.
         
             Entering: "transition ease-out duration-100"
@@ -130,34 +133,33 @@
             Leaving: "transition ease-in duration-75"
               From: "transform opacity-100 scale-100"
               To: "transform opacity-0 scale-95"
-          -->
-        </div>
-        <div class="relative inline-block text-left">
-          <div>
-            <button
-              type="button"
-              class="inline-flex w-full justify-center gap-x-8 rounded-md bg-white px-3 py-3 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-              id="menu-button"
-              aria-expanded="true"
-              aria-haspopup="true"
-            >
-              Ustensiles
-              <svg
-                class="-mr-1 h-5 w-5 text-gray-400"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
+          --></div>
+          <div class="relative inline-block text-left">
+            <div>
+              <button
+                type="button"
+                class="inline-flex w-full justify-center gap-x-8 rounded-md bg-white px-3 py-3 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+                id="menu-button"
+                aria-expanded="true"
+                aria-haspopup="true"
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </button>
-          </div>
+                Ustensiles
+                <svg
+                  class="-mr-1 h-5 w-5 text-gray-400"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
 
-          <!--
+            <!--
             Dropdown menu, show/hide based on menu state.
         
             Entering: "transition ease-out duration-100"
@@ -166,396 +168,21 @@
             Leaving: "transition ease-in duration-75"
               From: "transform opacity-100 scale-100"
               To: "transform opacity-0 scale-95"
-          -->
+          --></div>
+          <div class="flex flex-end w-1/2 justify-end items-center">
+            <h3 class="font-bold text-2xl leading-8 anton">1500 recettes</h3>
+          </div>
         </div>
-        <div class="flex flex-end w-1/2 justify-end items-center">
-          <h3 class="font-bold text-2xl leading-8 anton">1500 recettes</h3>
+
+        <div
+          id="recipes"
+          class="grid gap-y-14 recipes-gc3 justify-items-center"
+        >
+          <!-- les recettes seront affichées ici -->
         </div>
-      </div>
-
-      <div id="recipes" class="grid gap-y-14 recipes-gc3 justify-items-center">
-        <!-- les recettes seront affichées ici -->
-        <article class="w-96 h-46 bg-white rounded-2xl">
-          <div id="recipe" class="w-96 h-46 relative">
-            <span
-              class="absolute absolute-positionx absolute-positiony text-xs leading-4 p-1 rounded-2xl bg-yellow-400 text-black w-16 text-center"
-              >30 min</span
-            >
-            <img
-              src="/assets/images/Recette01.jpg"
-              alt="recette01"
-              class="w-full h-64 object-cover rounded-md"
-            />
-            <div id="recipe-container" class="m-5">
-              <div id="recipe-info" class="my-6">
-                <h2 class="text-lg anton">Limonade de Coco</h2>
-              </div>
-              <div id="recipe-content" class="my-3">
-                <div id="recipe-instructions" class="my-3">
-                  <h3 class="text-gray-500 text-xs leading-4 font-bold my-4">
-                    RECETTE
-                  </h3>
-                  <p class="text-sm leading-5">
-                    Mettre les glaçons à votre goût dans la saumure. Ajouter le
-                    jus de citron et la crème de coco. Verser la préparation sur
-                    les bouteilles.
-                  </p>
-                </div>
-                <div id="recipe-ingredients" class="grid">
-                  <h3 class="text-gray-500 text-xs leading-4 font-bold my-4">
-                    INGRÉDIENTS
-                  </h3>
-                  <ul class="h-48 grid grid-cols-2 gap-x-16">
-                    <li class="text-sm font-medium">
-                      Lait de coco
-                      <br />
-                      <span class="text-gray-500">400 ml </span>
-                    </li>
-
-                    <li class="text-sm font-medium">
-                      Jus de citron
-                      <br />
-                      <span class="text-gray-500">2</span>
-                    </li>
-                    <li class="text-sm font-medium">
-                      Crème de coco
-                      <br />
-                      <span class="text-gray-500">4 cuillères</span>
-                    </li>
-                    <li class="text-sm font-medium">
-                      Sucre
-                      <br />
-                      <span class="text-gray-500">30g</span>
-                    </li>
-                    <li class="text-sm font-medium">
-                      Glace
-                      <br />
-                      <span class="text-gray-500">1</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="w-96 h-46 bg-white rounded-2xl">
-          <div id="recipe" class="w-96 h-46 relative">
-            <span
-              class="absolute absolute-positionx absolute-positiony text-xs leading-4 p-1 rounded-2xl bg-yellow-400 text-black w-16 text-center"
-              >30 min</span
-            >
-            <img
-              src="/assets/images/Recette02.jpg"
-              alt="recette02"
-              class="w-full h-64 object-cover rounded-md"
-            />
-            <div id="recipe-container" class="m-5">
-              <div id="recipe-info" class="my-6">
-                <h2 class="text-lg anton">Limonade de Coco</h2>
-              </div>
-              <div id="recipe-content" class="my-3">
-                <div id="recipe-instructions" class="my-3">
-                  <h3 class="text-gray-500 text-xs leading-4 font-bold my-4">
-                    RECETTE
-                  </h3>
-                  <p class="text-sm leading-5">
-                    Mettre les glaçons à votre goût dans la saumure. Ajouter le
-                    jus de citron et la crème de coco. Verser la préparation sur
-                    les bouteilles.
-                  </p>
-                </div>
-                <div id="recipe-ingredients" class="grid">
-                  <h3 class="text-gray-500 text-xs leading-4 font-bold my-4">
-                    INGRÉDIENTS
-                  </h3>
-                  <ul class="h-48 grid grid-cols-2 gap-x-16">
-                    <li class="text-sm font-medium">
-                      Lait de coco
-                      <br />
-                      <span class="text-gray-500">400 ml </span>
-                    </li>
-
-                    <li class="text-sm font-medium">
-                      Jus de citron
-                      <br />
-                      <span class="text-gray-500">2</span>
-                    </li>
-                    <li class="text-sm font-medium">
-                      Crème de coco
-                      <br />
-                      <span class="text-gray-500">4 cuillères</span>
-                    </li>
-                    <li class="text-sm font-medium">
-                      Sucre
-                      <br />
-                      <span class="text-gray-500">30g</span>
-                    </li>
-                    <li class="text-sm font-medium">
-                      Glace
-                      <br />
-                      <span class="text-gray-500">1</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="w-96 h-46 bg-white rounded-2xl">
-          <div id="recipe" class="w-96 h-46 relative">
-            <span
-              class="absolute absolute-positionx absolute-positiony text-xs leading-4 p-1 rounded-2xl bg-yellow-400 text-black w-16 text-center"
-              >30 min</span
-            >
-            <img
-              src="/assets/images/Recette03.jpg"
-              alt="recette03"
-              class="w-full h-64 object-cover rounded-md"
-            />
-            <div id="recipe-container" class="m-5">
-              <div id="recipe-info" class="my-6">
-                <h2 class="text-lg anton">Limonade de Coco</h2>
-              </div>
-              <div id="recipe-content" class="my-3">
-                <div id="recipe-instructions" class="my-3">
-                  <h3 class="text-gray-500 text-xs leading-4 font-bold my-4">
-                    RECETTE
-                  </h3>
-                  <p class="text-sm leading-5">
-                    Mettre les glaçons à votre goût dans la saumure. Ajouter le
-                    jus de citron et la crème de coco. Verser la préparation sur
-                    les bouteilles.
-                  </p>
-                </div>
-                <div id="recipe-ingredients" class="grid">
-                  <h3 class="text-gray-500 text-xs leading-4 font-bold my-4">
-                    INGRÉDIENTS
-                  </h3>
-                  <ul class="h-48 grid grid-cols-2 gap-x-16">
-                    <li class="text-sm font-medium">
-                      Lait de coco
-                      <br />
-                      <span class="text-gray-500">400 ml </span>
-                    </li>
-
-                    <li class="text-sm font-medium">
-                      Jus de citron
-                      <br />
-                      <span class="text-gray-500">2</span>
-                    </li>
-                    <li class="text-sm font-medium">
-                      Crème de coco
-                      <br />
-                      <span class="text-gray-500">4 cuillères</span>
-                    </li>
-                    <li class="text-sm font-medium">
-                      Sucre
-                      <br />
-                      <span class="text-gray-500">30g</span>
-                    </li>
-                    <li class="text-sm font-medium">
-                      Glace
-                      <br />
-                      <span class="text-gray-500">1</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="w-96 h-46 bg-white rounded-2xl">
-          <div id="recipe" class="w-96 h-46 relative">
-            <span
-              class="absolute absolute-positionx absolute-positiony text-xs leading-4 p-1 rounded-2xl bg-yellow-400 text-black w-16 text-center"
-              >30 min</span
-            >
-            <img
-              src="/assets/images/Recette04.jpg"
-              alt="recette04"
-              class="w-full h-64 object-cover rounded-md"
-            />
-            <div id="recipe-container" class="m-5">
-              <div id="recipe-info" class="my-6">
-                <h2 class="text-lg anton">Limonade de Coco</h2>
-              </div>
-              <div id="recipe-content" class="my-3">
-                <div id="recipe-instructions" class="my-3">
-                  <h3 class="text-gray-500 text-xs leading-4 font-bold my-4">
-                    RECETTE
-                  </h3>
-                  <p class="text-sm leading-5">
-                    Mettre les glaçons à votre goût dans la saumure. Ajouter le
-                    jus de citron et la crème de coco. Verser la préparation sur
-                    les bouteilles.
-                  </p>
-                </div>
-                <div id="recipe-ingredients" class="grid">
-                  <h3 class="text-gray-500 text-xs leading-4 font-bold my-4">
-                    INGRÉDIENTS
-                  </h3>
-                  <ul class="h-48 grid grid-cols-2 gap-x-16">
-                    <li class="text-sm font-medium">
-                      Lait de coco
-                      <br />
-                      <span class="text-gray-500">400 ml </span>
-                    </li>
-
-                    <li class="text-sm font-medium">
-                      Jus de citron
-                      <br />
-                      <span class="text-gray-500">2</span>
-                    </li>
-                    <li class="text-sm font-medium">
-                      Crème de coco
-                      <br />
-                      <span class="text-gray-500">4 cuillères</span>
-                    </li>
-                    <li class="text-sm font-medium">
-                      Sucre
-                      <br />
-                      <span class="text-gray-500">30g</span>
-                    </li>
-                    <li class="text-sm font-medium">
-                      Glace
-                      <br />
-                      <span class="text-gray-500">1</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="w-96 h-46 bg-white rounded-2xl">
-          <div id="recipe" class="w-96 h-46 relative">
-            <span
-              class="absolute absolute-positionx absolute-positiony text-xs leading-4 p-1 rounded-2xl bg-yellow-400 text-black w-16 text-center"
-              >30 min</span
-            >
-            <img
-              src="/assets/images/Recette05.jpg"
-              alt="recette05"
-              class="w-full h-64 object-cover rounded-md"
-            />
-            <div id="recipe-container" class="m-5">
-              <div id="recipe-info" class="my-6">
-                <h2 class="text-lg anton">Limonade de Coco</h2>
-              </div>
-              <div id="recipe-content" class="my-3">
-                <div id="recipe-instructions" class="my-3">
-                  <h3 class="text-gray-500 text-xs leading-4 font-bold my-4">
-                    RECETTE
-                  </h3>
-                  <p class="text-sm leading-5">
-                    Mettre les glaçons à votre goût dans la saumure. Ajouter le
-                    jus de citron et la crème de coco. Verser la préparation sur
-                    les bouteilles.
-                  </p>
-                </div>
-                <div id="recipe-ingredients" class="grid">
-                  <h3 class="text-gray-500 text-xs leading-4 font-bold my-4">
-                    INGRÉDIENTS
-                  </h3>
-                  <ul class="h-48 grid grid-cols-2 gap-x-16">
-                    <li class="text-sm font-medium">
-                      Lait de coco
-                      <br />
-                      <span class="text-gray-500">400 ml </span>
-                    </li>
-
-                    <li class="text-sm font-medium">
-                      Jus de citron
-                      <br />
-                      <span class="text-gray-500">2</span>
-                    </li>
-                    <li class="text-sm font-medium">
-                      Crème de coco
-                      <br />
-                      <span class="text-gray-500">4 cuillères</span>
-                    </li>
-                    <li class="text-sm font-medium">
-                      Sucre
-                      <br />
-                      <span class="text-gray-500">30g</span>
-                    </li>
-                    <li class="text-sm font-medium">
-                      Glace
-                      <br />
-                      <span class="text-gray-500">1</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
-        <article class="w-96 h-46 bg-white rounded-2xl">
-          <div id="recipe" class="w-96 h-46 relative">
-            <span
-              class="absolute absolute-positionx absolute-positiony text-xs leading-4 p-1 rounded-2xl bg-yellow-400 text-black w-16 text-center"
-              >30 min</span
-            >
-            <img
-              src="/assets/images/Recette06.jpg"
-              alt="recette06"
-              class="w-full h-64 object-cover rounded-md"
-            />
-            <div id="recipe-container" class="m-5">
-              <div id="recipe-info" class="my-6">
-                <h2 class="text-lg anton">Limonade de Coco</h2>
-              </div>
-              <div id="recipe-content" class="my-3">
-                <div id="recipe-instructions" class="my-3">
-                  <h3 class="text-gray-500 text-xs leading-4 font-bold my-4">
-                    RECETTE
-                  </h3>
-                  <p class="text-sm leading-5">
-                    Mettre les glaçons à votre goût dans la saumure. Ajouter le
-                    jus de citron et la crème de coco. Verser la préparation sur
-                    les bouteilles.
-                  </p>
-                </div>
-                <div id="recipe-ingredients" class="grid">
-                  <h3 class="text-gray-500 text-xs leading-4 font-bold my-4">
-                    INGRÉDIENTS
-                  </h3>
-                  <ul class="h-48 grid grid-cols-2 gap-x-16">
-                    <li class="text-sm font-medium">
-                      Lait de coco
-                      <br />
-                      <span class="text-gray-500">400 ml </span>
-                    </li>
-
-                    <li class="text-sm font-medium">
-                      Jus de citron
-                      <br />
-                      <span class="text-gray-500">2</span>
-                    </li>
-                    <li class="text-sm font-medium">
-                      Crème de coco
-                      <br />
-                      <span class="text-gray-500">4 cuillères</span>
-                    </li>
-                    <li class="text-sm font-medium">
-                      Sucre
-                      <br />
-                      <span class="text-gray-500">30g</span>
-                    </li>
-                    <li class="text-sm font-medium">
-                      Glace
-                      <br />
-                      <span class="text-gray-500">1</span>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-        </article>
       </div>
     </main>
     <footer></footer>
   </body>
-  <script src="/scripts/index.js"></script>
+  <script type="module" src="/scripts/index.js"></script>
 </html>

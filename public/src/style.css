@@ -40,5 +40,9 @@
   line-height: 4.5rem;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 @tailwind components;
 @tailwind utilities;
