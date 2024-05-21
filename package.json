@@ -14,9 +14,11 @@
     "json-server": "^0.17.0"
   },
   "devDependencies": {
+    "@angular-eslint/template-parser": "^17.4.1",
     "@eslint/js": "^9.2.0",
     "@faker-js/faker": "^6.3.1",
     "eslint": "^9.2.0",
+    "eslint-plugin-tailwindcss": "^3.15.2",
     "globals": "^15.2.0",
     "tailwindcss": "^3.4.3"
   },

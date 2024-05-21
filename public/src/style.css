@@ -1,3 +1,44 @@
 @tailwind base;
+.HaW {
+  height: 41.7rem;
+}
+.w-55_625 {
+  width: 55.625rem;
+}
+.h-46 {
+  height: 46rem;
+}
+.top45 {
+  top: 45%;
+}
+.recipes-gc3 {
+  grid-template-columns: repeat(3, minmax(0, 27em));
+}
+.filters {
+  width: 87.5%;
+}
+
+.absolute-positionx {
+  left: 310px;
+}
+
+.absolute-positiony {
+  top: 20px;
+}
+.max-w-1440 {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.anton {
+  font-family: "Anton", sans-serif;
+}
+.manrope {
+  font-family: "Manrope", sans-serif;
+}
+.line-height {
+  font-size: 3rem;
+  line-height: 4.5rem;
+}
+
 @tailwind components;
 @tailwind utilities;
