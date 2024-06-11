@@ -37,34 +37,44 @@
           CHERCHEZ PARMI PLUS DE 1500 RECETTES DU QUOTIDIEN,SIMPLES ET
           DÉLICIEUSES
         </h2>
-        <div class="w-full flex justify-center">
-          <input
-            type="text"
-            id="search"
-            placeholder="Rechercher une recette,un ingrédient..."
-            class="w-4/5 h-20 rounded-md px-10"
-            onkeyup="search()"
-          />
-          <button
-            type="submit"
-            class="absolute right-96 top-96 translate-y-9 bg-no-repeat bg-black h-14 w-14 rounded-md"
+        <div
+          class="w-full flex justify-center items-center flex-wrap"
+          id="searchbar"
+        >
+          <div id="tagsSearch" class="flex flex-wrap items-center"></div>
+          <!-- le champ de recherche sera affiché ici -->
+          <form
+            id="search-form"
+            class="w-full flex justify-center items-center"
           >
-            <i class="fa-solid fa-magnifying-glass fa-2xl text-white"></i>
-          </button>
+            <input
+              type="text"
+              id="search"
+              placeholder="Rechercher une recette,un ingrédient..."
+              class="w-4/5 h-20 rounded-md px-6"
+            />
+            <button
+              type="submit"
+              class="right-16 relative bg-no-repeat bg-black h-14 w-14 rounded-md"
+              id="search-button"
+            >
+              <i class="fa-solid fa-magnifying-glass fa-2xl text-white"></i>
+            </button>
+          </form>
         </div>
       </div>
     </header>
     <main class="bg-gray-200">
       <div
         id="recipes_section"
-        class="flex flex-col justify-center items-center"
+        class="flex flex-col justify-center items-center z-"
       >
         <div
           id="filters"
           class="flex justify-items-start gap-16 filters mt-5 mb-10"
         >
           <!-- les filtres seront affichés ici -->
-          <div class="relative inline-block text-left">
+          <!--div class="relative inline-block text-left">
             <div>
               <button
                 type="button"
@@ -88,18 +98,8 @@
                 </svg>
               </button>
             </div>
-
-            <!--
-            Dropdown menu, show/hide based on menu state.
-        
-            Entering: "transition ease-out duration-100"
-              From: "transform opacity-0 scale-95"
-              To: "transform opacity-100 scale-100"
-            Leaving: "transition ease-in duration-75"
-              From: "transform opacity-100 scale-100"
-              To: "transform opacity-0 scale-95"
-          --></div>
-          <div class="relative inline-block text-left">
+          </!--div-->
+          <!--div class="relative inline-block text-left">
             <div>
               <button
                 type="button"
@@ -123,18 +123,8 @@
                 </svg>
               </button>
             </div>
-
-            <!--
-            Dropdown menu, show/hide based on menu state.
-        
-            Entering: "transition ease-out duration-100"
-              From: "transform opacity-0 scale-95"
-              To: "transform opacity-100 scale-100"
-            Leaving: "transition ease-in duration-75"
-              From: "transform opacity-100 scale-100"
-              To: "transform opacity-0 scale-95"
-          --></div>
-          <div class="relative inline-block text-left">
+          </!--div-->
+          <!--div-- class="relative inline-block text-left">
             <div>
               <button
                 type="button"
@@ -159,24 +149,15 @@
               </button>
             </div>
 
-            <!--
-            Dropdown menu, show/hide based on menu state.
-        
-            Entering: "transition ease-out duration-100"
-              From: "transform opacity-0 scale-95"
-              To: "transform opacity-100 scale-100"
-            Leaving: "transition ease-in duration-75"
-              From: "transform opacity-100 scale-100"
-              To: "transform opacity-0 scale-95"
-          --></div>
-          <div class="flex flex-end w-1/2 justify-end items-center">
+            </div-->
+          <!--div class="flex flex-end w-1/2 justify-end items-center">
             <h3 class="font-bold text-2xl leading-8 anton">1500 recettes</h3>
-          </div>
+          </!--div-->
         </div>
 
         <div
           id="recipes"
-          class="grid gap-y-14 recipes-gc3 justify-items-center"
+          class="grid gap-y-14 recipes-gc3 justify-items-center curo"
         >
           <!-- les recettes seront affichées ici -->
         </div>
@@ -185,4 +166,6 @@
     <footer></footer>
   </body>
   <script type="module" src="/scripts/index.js"></script>
+  <script type="module" src="/scripts/recipes.js"></script>
+  <script type="module" src="/scripts/filter.js"></script>
 </html>

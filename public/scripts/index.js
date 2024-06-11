@@ -1,5 +1,5 @@
-import { createRecipeCard } from "../scripts/recipes.js";
-async function getRecipes() {
+import { createFilters, createRecipeCard } from "../scripts/recipes.js";
+export async function getRecipes() {
   const response = await fetch("/data/recipes.json");
   const data = await response.json();
   const { recipes } = data;
@@ -9,8 +9,8 @@ async function getRecipes() {
   };
 }
 
-async function displayRecipes(recipes) {
-  const recipesSection = document.getElementById("recipes_section");
+export async function displayRecipes(recipes) {
+  const recipesSection = document.getElementById("recipes");
   recipes.forEach((recipe) => {
     const recipeModel = createRecipeCard(recipe);
     const recipeCard = recipeModel.getRecipeCard();
@@ -21,6 +21,8 @@ async function displayRecipes(recipes) {
 async function init() {
   const { recipes } = await getRecipes();
   await displayRecipes(recipes);
+
+  createFilters();
 }
 
 init();

@@ -40,9 +40,66 @@
   line-height: 4.5rem;
 }
 
-.hidden {
+.o-hidden {
   overflow: hidden;
 }
 
+.top-search {
+  top: 30.2rem;
+}
+.w-search {
+  width: 60.5%;
+}
+.right-search {
+  right: 25.25rem;
+}
+/* Target the dropdown by its ID or class */
+#tagsUs::-webkit-scrollbar {
+  width: 6px; /* Adjust the width as needed */
+}
+
+#tagsUs::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+#tagsUs::-webkit-scrollbar-thumb {
+  background: #888; /* Handle color */
+}
+
+#tagsUs::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Handle color on hover */
+}
+
+#tagsAp::-webkit-scrollbar {
+  width: 6px; /* Adjust the width as needed */
+}
+
+#tagsAp::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+#tagsAp::-webkit-scrollbar-thumb {
+  background: #888; /* Handle color */
+}
+
+#tagsAp::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Handle color on hover */
+}
+
+#tagsIn::-webkit-scrollbar {
+  width: 6px; /* Adjust the width as needed */
+}
+
+#tagsIn::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Track color */
+}
+
+#tagsIn::-webkit-scrollbar-thumb {
+  background: #888; /* Handle color */
+}
+
+#tagsIn::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Handle color on hover */
+}
 @tailwind components;
 @tailwind utilities;
